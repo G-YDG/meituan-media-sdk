@@ -14,6 +14,7 @@ class CpsTest extends AbstractTest
     public function test_query_coupon_and_get_referral_link()
     {
         $couponResponse = $this->getApp()->cps->query_coupon([
+            'searchText' => '奶茶',
             'platform' => 1,
             'pageNo' => 1,
             'pageSize' => 10,
